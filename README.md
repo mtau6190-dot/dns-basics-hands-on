@@ -113,14 +113,34 @@ Demonstrated how DNS A‑records map hostnames to IPs, enabling connectivity.
 <br>
 <h4>SUMMARY</h4>
 Showed how local DNS caching can cause stale results and how flushing ensures accuracy.
+<br>
 
-3. CNAME Record Exercise
-Created a CNAME record on DC‑1: search → www.google.com.
 
-From Client‑1, pinged search → resolved to Google.
+<h3>CNAME Records Exercise</h3>
 
-Verified with nslookup → confirmed CNAME resolution.
-Operational Value: Demonstrates aliasing with CNAME records, useful for redirecting services or simplifying hostnames.
+<p>Created a CNAME record on DC‑1: search → www.google.com.</p>
+<p>Go to Start -> Expand "Windows Admin Tools -> Click on "DNS" </p>
+<img width="822" height="860" alt="image" src="https://github.com/user-attachments/assets/f5367033-ef10-4553-a808-35293c184c93" />
+<br>
+<p>Click on "dc-1" to expand -> Expand "Forward Lookup Zones" -> Click on "mydomain.com" to see its information.</p>
+<img width="941" height="658" alt="image" src="https://github.com/user-attachments/assets/5a9d9d20-30a7-4830-9a4f-dd1efe19c163" />
+<br>
+<p>Right-Click on "mydomain.com" -> Click on "New Alias(CNAME) </p>
+<img width="943" height="660" alt="image" src="https://github.com/user-attachments/assets/5ee9ad28-0d17-4ae8-9992-bfa02e92001b" />
+<br>
+<p>Type in the word "search"(Note: "Search" is just another random name chosen). -type "www.google.com" as FQDN as an example</p>
+<img width="505" height="593" alt="image" src="https://github.com/user-attachments/assets/d1debcf8-3a4a-493f-a496-fee5112fb419" />
+<img width="938" height="659" alt="image" src="https://github.com/user-attachments/assets/1ead63e6-4f9c-4a82-b0a4-e93554c12b74" />
+<br>
+<p>From Client‑1, pinged search → resolved to Google.</p>
+<img width="1021" height="523" alt="image" src="https://github.com/user-attachments/assets/a0f4f4f1-a5d9-47e3-8acb-2de6bce2cd38" />
+<br>
+
+<p>Verified with nslookup → confirmed CNAME resolution.</p>
+<img width="841" height="744" alt="image" src="https://github.com/user-attachments/assets/ab6ce8e9-ee79-46c9-b5a3-e1a6f302467c" />
+<br>
+<h4>SUMMARY</h4>
+Demonstrated aliasing with CNAME records, useful for redirecting services or simplifying hostnames.
 
 
 
