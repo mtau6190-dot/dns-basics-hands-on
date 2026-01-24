@@ -91,7 +91,6 @@ Demonstrated how DNS A‑records map hostnames to IPs, enabling connectivity.
 <img width="1442" height="689" alt="image" src="https://github.com/user-attachments/assets/fe331fbd-bf51-4659-9f28-e73ca72be92f" />
 <img width="950" height="671" alt="image" src="https://github.com/user-attachments/assets/246e1909-af4b-4ecd-861a-3f9e09f35b3d" />
 <br>
-
 <p>Go back to client-1 -> try the ping command on cmd "ping mainframe" again to observe. Notice that client‑1 still pinged the old address due to cached entry.</p>
 <img width="792" height="343" alt="image" src="https://github.com/user-attachments/assets/c9a96521-7875-4e17-847e-284d723a0a2a" />
 <br> 
@@ -109,15 +108,11 @@ Demonstrated how DNS A‑records map hostnames to IPs, enabling connectivity.
 <p>No record of cache found for Mainframe. Type "ipconfig /displaydns -> Click "Enter" on Keyboard. To observe the dns cache again</p>
 <img width="1110" height="639" alt="image" src="https://github.com/user-attachments/assets/c7a17361-72ea-4d7d-8500-0e6a0558e89b" />
 <br> 
-
-
-
-
-
-
-
-Retested ping → new record resolved correctly.
-Operational Value: Shows how local DNS caching can cause stale results and how flushing ensures accuracy.
+<p>Retested ping → new record resolved correctly. Go back to Command Propmt on client-1 and type "ping mainframe" to observe. </p>
+<img width="807" height="342" alt="image" src="https://github.com/user-attachments/assets/93dbb2bf-187b-4ce2-83ca-7471dcd8345e" />
+<br>
+<h4>SUMMARY</h4>
+Showed how local DNS caching can cause stale results and how flushing ensures accuracy.
 
 3. CNAME Record Exercise
 Created a CNAME record on DC‑1: search → www.google.com.
